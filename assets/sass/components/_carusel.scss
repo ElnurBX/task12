@@ -1,0 +1,95 @@
+.carusel{
+    overflow: hidden;
+    min-height: 720px;
+    &__slider{
+        height: 720px;
+        width: 200%;
+        display: flex;
+        #sl1{
+            background-image: url(https://preview.colorlib.com/theme/fashi/img/hero-2.jpg);
+            background-size: cover;
+            background-position: top center;
+        }
+        #sl2{
+            background-image: url(https://preview.colorlib.com/theme/fashi/img/hero-1.jpg);
+            background-size: cover;
+            background-position: top center;
+        }
+        &__slide{
+            height: 100%;
+            padding: 0 10px;
+            width: 50%;
+            display: flex;
+            position: relative;
+            gap: 30px;
+            &__btn{
+                color: $secenddark;
+                align-items: center;
+                width: 30px;
+                height: 45px;
+                font-size: $fs6;
+                margin-top: 25%;
+                font-weight: 100;
+                
+            }
+            &__main{
+                display: flex;
+                gap: 10%;
+                padding-top: 20%;
+                &__discription{
+                    span{
+                        font-size: $cs1;
+                        color: $primary;
+                        font-weight: 700;
+                        margin: 0 0 4px 0;
+                    }
+                    h2{
+                        color: $secendery;
+                        font-size: $fs8;
+                        font-weight: 700;
+                        margin-bottom: 6px;
+                        
+                        
+                    }
+                    p{
+                        font-size: $fs3;
+                        color: $cd;
+                        font-weight: 400;
+                        line-height: 26px;
+                        margin: 0 0 24px 0;
+                    }
+                }
+                &__discount{
+                    top: -150px;
+                    position: relative;
+                    width: 155px;
+                    height: 155px;
+                h2{
+                    position: absolute;
+                    z-index: 2;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    font-size: $fs5;
+                    font-weight: 700;
+                    color: #ffffff;
+                }
+                &__bg{
+                    position: absolute;
+                    height: 154px;
+                    width: 154px;
+                    padding-top: 40px;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 140px;
+                    background: #e7ab3c;
+                    z-index:1;
+                    opacity:1;
+                    border: 3px $white dashed;
+                    outline: 5px $primary solid;
+                }
+            }
+            }
+        }
+    }
+}

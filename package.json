@@ -1,0 +1,17 @@
+{
+  "name": "day8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass assets/sass/style.scss -o assets/css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^18.20.0",
+    "node-sass": "^9.0.0",
+    "sass": "^1.72.0"
+  }
+}

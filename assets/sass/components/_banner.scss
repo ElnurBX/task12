@@ -1,0 +1,42 @@
+.banner{
+    padding:80px 0 ;    
+    &__single{
+        padding:0 15px;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        &:hover &__overlay::before{
+            left: -60%;
+            top: -65%;
+            width: 200%;
+            height: 200%;
+
+        }
+        &__overlay{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: block;
+            background-color: $white;
+            padding: 11px 28px;
+            z-index: 1;
+            transform: translate(-50%,-50%);
+            &::before{
+                position: absolute;
+                content: "";
+                top: 50%;
+                left: 50%;
+                
+                width: 0;
+                height: 0;
+                background: transparent;
+                z-index: -1;
+                border: 10px solid $white;
+                opacity: 0.5;
+                transition: 0.5s;
+            }
+        }
+    }
+}

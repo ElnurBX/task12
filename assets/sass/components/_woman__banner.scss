@@ -1,0 +1,174 @@
+.woman__banner{
+    padding: 0 0 80px;
+    .container{
+    justify-content: space-between;
+    }
+        &__img{
+            &--man{
+                background-image: url(https://preview.colorlib.com/theme/fashi/img/products/man-large.jpg) !important;
+            }
+            background-size: cover;
+            background-position: top;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-image: url(https://preview.colorlib.com/theme/fashi/img/products/women-large.jpg.webp);
+            h3{
+                color: $white;
+                font-size:$fs7;
+                font-weight: 700;
+                margin-bottom: $is;
+            }      
+            a{
+                color: #ffffff;
+                font-size: 18px;
+                font-weight: 500;
+                display: inline-block;
+                position: relative;
+                border-bottom: 1px solid $white;
+                padding-bottom: 5px;
+            }      
+        }
+        &__carusel{
+            padding: 20px 0;
+            &__top{
+                padding: 32px 0 0 0 ;
+                margin-bottom: 45px;
+                display: flex;
+                justify-content: center;
+                align-self: center;
+                ul{
+                    display: flex;
+                    gap: 10px;
+                    li{
+                        list-style: none;
+                        display: inline-block;
+                        font-size: 20px;
+                        color: $ac;
+                        margin-right: 22px;
+                        position: relative;
+                        cursor: pointer;
+                    }
+                }
+                &__active{
+                    position: relative;
+                    color: $secendery !important;
+                    &::before{
+                    position: absolute;
+                    left: 0;
+                    bottom: -5px;
+                    width: 100%;
+                    height: 2px;
+                    background: $cbb;
+                    content: "";
+                    opacity: 1;
+                    }
+                }
+            }
+            &__mid{
+                width: 100%;
+                padding:0 10px ;
+                display: flex;
+                justify-content: space-between;
+                &__btn{
+                    display: flex;
+                    width: 30px;
+                    font-size: 30px;
+                    transform: scaleX(0.5);
+                    align-items: center;
+                    display: flex;
+                    align-items: center;
+                    color: $secenddark;
+                }
+                &__slider{
+                    gap: 5px;
+                    &__items{
+                        display: flex;
+                        flex-direction: column;
+                        &__top{ 
+                            position: relative;
+                            overflow: hidden;
+                            img{
+                                width: 100%;
+                            }
+                            .fa-heart{
+                                position: absolute;
+                                right: 10px;
+                                top: -50px;
+                                transition: 0.5s;
+                            }
+                            .discript{
+                                width: 80%;
+                                left: 10%;
+                                position: absolute;
+                                bottom:-60px;
+                                transition: 0.5s;
+                                gap: 5px;
+                                &__bag{
+                                    padding: 18px 9px;
+                                    background-color: $primary;
+                                    color: $white;
+                                }
+                                &__quick{
+                                    padding: 10px;
+                                    background-color: $white;
+                                    align-items: center;
+                                    display: flex;
+                                    color: $secenddark;
+                                }
+                            }
+                        }
+                        &:hover &__top{
+                            .fa-heart{
+                                position: absolute;
+                                right: 10px;
+                                top: 10px;
+                            }
+                            .discript{
+                                position: absolute;
+                                bottom:0px;}
+                        }
+                        &__bottom{
+                            text-align: center;
+                            span{
+                                color: $ac;
+                                font-size: $fs0;
+                                font-weight: 700;
+                            }
+                            h5{
+                                color: $secendery;
+                                font-size: $is;
+                                font-weight: 400;
+                            }
+                            h2{
+                                color: $primary;
+                                font-size: $fs3;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+            &__bottom{
+                justify-content: center;
+                display: flex;
+                gap: 5px;
+                padding: 20px 0;
+                font-size: $fs5;
+                text-align: center;
+                a{
+                    width: 5px;
+                    border-radius: 2.5px;
+                    height: 5px;
+                    display: block;
+                    background: $secenddark;
+                }
+                &__active{
+                    display: block;
+                    width: 25px !important;
+                    
+                }
+            }
+        }
+}
